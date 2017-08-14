@@ -1,1 +1,1 @@
-# Mastermind Simple
+#[ModKit Wiki](../../wiki)

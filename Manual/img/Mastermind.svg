@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="0.0 0.0 348.0 348.0"
+   fill="none"
+   stroke="none"
+   stroke-linecap="square"
+   stroke-miterlimit="10"
+   id="svg19"
+   sodipodi:docname="Mastermind.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata25">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs23" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="2004"
+     id="namedview21"
+     showgrid="false"
+     inkscape:zoom="1.3563218"
+     inkscape:cx="13.706165"
+     inkscape:cy="131.58763"
+     inkscape:window-x="-16"
+     inkscape:window-y="-16"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg19" />
+  <clipPath
+     id="p.0">
+    <path
+       d="m0 0l348.0 0l0 348.0l-348.0 0l0 -348.0z"
+       clip-rule="nonzero"
+       id="path2" />
+  </clipPath>
+  <g
+     clip-path="url(#p.0)"
+     id="g17">
+    <path
+       d="m0 0l348.0 0l0 348.0l-348.0 0z"
+       id="path5"
+       fill-rule="nonzero"
+       fill-opacity="0.0"
+       fill="#000000" />
+    <path
+       d="m-6.0 0l348.0 0l0 347.9685l-348.0 0z"
+       id="path7"
+       fill-rule="nonzero"
+       fill="#ffffff" />
+    <path
+       d="m5.07874 5.7758217l336.9134 0l0 337.6693l-336.9134 0z"
+       id="path9"
+       fill-rule="nonzero"
+       fill-opacity="0.0"
+       fill="#000000" />
+    <path
+       d="m5.07874 5.7758217l336.9134 0l0 337.6693l-336.9134 0z"
+       id="path11"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       stroke-width="2.0"
+       stroke="#000000"
+       fill-rule="nonzero" />
+    <path
+       d="m282.73444 40.553925l0 0c0 -8.375591 6.966034 -15.165352 15.5590515 -15.165352l0 0c4.126526 0 8.084015 1.5977726 11.001923 4.441828c2.9178772 2.844057 4.557129 6.7014217 4.557129 10.723524l0 0c0 8.375595 -6.9660034 15.165356 -15.5590515 15.165356l0 0c-8.593018 0 -15.5590515 -6.7897606 -15.5590515 -15.165356z"
+       id="path13"
+       fill-rule="nonzero"
+       fill="#ffffff" />
+    <path
+       d="m282.73444 40.553925l0 0c0 -8.375591 6.966034 -15.165352 15.5590515 -15.165352l0 0c4.126526 0 8.084015 1.5977726 11.001923 4.441828c2.9178772 2.844057 4.557129 6.7014217 4.557129 10.723524l0 0c0 8.375595 -6.9660034 15.165356 -15.5590515 15.165356l0 0c-8.593018 0 -15.5590515 -6.7897606 -15.5590515 -15.165356z"
+       id="path15"
+       stroke-linejoin="round"
+       stroke-linecap="butt"
+       stroke-width="2.0"
+       stroke="#000000"
+       fill-rule="nonzero" />
+  </g>
+  <ellipse
+     style="fill:#ffffff;stroke:#000000"
+     id="path4508"
+     cx="172.1017"
+     cy="183.78813"
+     rx="23.59322"
+     ry="22.855932" />
+  <ellipse
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.95906317"
+     id="path4510"
+     cx="172.47034"
+     cy="183.78813"
+     rx="12.185723"
+     ry="11.817079" />
+  <ellipse
+     style="fill:#ffffff;stroke:#000000"
+     id="path4508-1"
+     cx="229.61017"
+     cy="183.05084"
+     rx="23.59322"
+     ry="22.855932" />
+  <ellipse
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.95906317"
+     id="path4510-7"
+     cx="229.97881"
+     cy="183.05084"
+     rx="12.185723"
+     ry="11.817079" />
+  <ellipse
+     style="fill:#ffffff;stroke:#000000"
+     id="path4508-8"
+     cx="286.38135"
+     cy="182.31355"
+     rx="23.59322"
+     ry="22.855932" />
+  <ellipse
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.95906317"
+     id="path4510-2"
+     cx="286.75"
+     cy="182.31355"
+     rx="12.185723"
+     ry="11.817079" />
+  <ellipse
+     style="fill:#ffffff;stroke:#000000"
+     id="path4508-3"
+     cx="115.33051"
+     cy="184.52542"
+     rx="23.59322"
+     ry="22.855932" />
+  <ellipse
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.95906317"
+     id="path4510-5"
+     cx="115.69915"
+     cy="184.52542"
+     rx="12.185723"
+     ry="11.817079" />
+  <ellipse
+     style="fill:#ffffff;stroke:#000000"
+     id="path4508-2"
+     cx="57.084751"
+     cy="184.52542"
+     rx="23.59322"
+     ry="22.855932" />
+  <ellipse
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.95906317"
+     id="path4510-25"
+     cx="57.453381"
+     cy="184.52542"
+     rx="12.185723"
+     ry="11.817079" />
+  <rect
+     style="fill:#ffffff;stroke:#000000"
+     id="rect4554"
+     width="199.06779"
+     height="81.838982"
+     x="37.601696"
+     y="36.864407" />
+  <rect
+     style="fill:#ffffff;stroke:#000000"
+     id="rect4558"
+     width="112.80508"
+     height="45.711864"
+     x="48.237289"
+     y="235.19492" />
+  <rect
+     style="fill:#ffffff;stroke:#000000"
+     id="rect4558-0"
+     width="112.80508"
+     height="45.711864"
+     x="183.52966"
+     y="235.19492" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="63.40678"
+     y="266.89832"
+     id="text4577"><tspan
+       sodipodi:role="line"
+       id="tspan4575"
+       x="63.40678"
+       y="266.89832"
+       style="line-height:1.25;font-size:26.66666667px">Query</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="191.98291"
+     y="267.3851"
+     id="text4577-3"><tspan
+       sodipodi:role="line"
+       id="tspan4575-3"
+       x="191.98291"
+       y="267.3851"
+       style="font-size:26.66666603px;line-height:1.25">Submit</tspan></text>
+</svg>
