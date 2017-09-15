@@ -21,7 +21,6 @@ public class Mastermind : MonoBehaviour {
 
 	private int[] SlotNR = {0, 0, 0, 0, 0}; //the "value" of every slot (=colors)
 	private int[] corrSlot = {0, 0, 0, 0, 0}; //array containing the correct value for every slot (0 equals slot 0, 1 equals slot 1...)
-	private string[] SlotColors = {"W", "M", "Y", "G", "R", "B"};
 	private int PegBlack = 0;
 	private int PegWhite = 0;
 	private int PegGray = 0;
@@ -48,7 +47,7 @@ public class Mastermind : MonoBehaviour {
 			corrSlot[i] = Random.Range (0, 6);
 		}
 //		Debug.Log ("[Mastermind #{0}] The correct code is {1} {2} {3} {4} {5} ", moduleId, corrSlot[0], corrSlot[1], corrSlot[2], corrSlot[3], corrSlot[4]);
-		Debug.Log ("[Mastermind Simple #" + moduleId + "] The correct code is " + SlotColors[corrSlot[0]] + " " + SlotColors[corrSlot[1]] + " " + SlotColors[corrSlot[2]] + " " + SlotColors[corrSlot[3]] + " " + SlotColors[corrSlot[4]]);
+		Debug.Log ("[Mastermind Simple #" + moduleId + "] The correct code is " + corrSlot[0] + corrSlot[1] + corrSlot[2] + corrSlot[3] + corrSlot[4]);
 
 		DisplaytextLeft.text = " ";
 		DisplaytextRight.text = " ";
@@ -88,6 +87,7 @@ public class Mastermind : MonoBehaviour {
 	}
 
 	void handleQuery() {
+		Debug.Log ("[Mastermind Simple #" + moduleId + "] Query was pressed");
 
 		Audio.PlayGameSoundAtTransform (KMSoundOverride.SoundEffect.ButtonPress, Query.transform);
 		Query.AddInteractionPunch ();
@@ -99,8 +99,9 @@ public class Mastermind : MonoBehaviour {
 
 			// substituting variables
 			int[] PHSlotNR = {SlotNR[0], SlotNR[1], SlotNR[2], SlotNR[3], SlotNR[4]};
-			Debug.Log ("[Mastermind Simple #" + moduleId + "] Query: " + SlotColors[PHSlotNR [0]] + " " + SlotColors[PHSlotNR [1]] + " " + SlotColors[PHSlotNR [2]] + " " + SlotColors[PHSlotNR [3]] + " " + SlotColors[PHSlotNR [4]]);
+			Debug.Log ("[Mastermind Simple #" + moduleId + "] Code entered: " + PHSlotNR [0] + PHSlotNR [1] + PHSlotNR [2] + PHSlotNR [3] + PHSlotNR [4]);
 			int[] PHcorrSlot = {corrSlot[0], corrSlot[1], corrSlot[2], corrSlot[3], corrSlot[4]};
+			Debug.Log ("[Mastermind Simple #" + moduleId + "] Correct code is: " + PHcorrSlot [0] + PHcorrSlot [1] + PHcorrSlot [2] + PHcorrSlot [3] + PHcorrSlot [4]);
 
 
 			// assigning black pegs
@@ -135,7 +136,7 @@ public class Mastermind : MonoBehaviour {
 			// assigning gray pegs
 			PegGray = (5 - PegBlack - PegWhite);
 
-			Debug.Log ("[Mastermind Simple #" + moduleId + "] Query result: " + PegBlack + " correct, " + PegWhite + " correct, but in wrong positions");
+			Debug.Log ("[Mastermind Simple #" + moduleId + "] Pegs are: " + PegBlack + " black, " + PegWhite + " white, " + PegGray + " gray.");
 
 			// update display
 			DisplaytextLeft.text = PegBlack.ToString ();
@@ -149,6 +150,7 @@ public class Mastermind : MonoBehaviour {
 	}
 
 	void handleSubmit() {
+		Debug.Log ("[Mastermind Simple #" + moduleId + "] Submit was pressed");
 
 		Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, Submit.transform);
 		Submit.AddInteractionPunch ();
@@ -164,17 +166,15 @@ public class Mastermind : MonoBehaviour {
 		if (PegBlack == 5) {
 			Module.HandlePass ();
 			isSolved = true;
-			Debug.Log ("[Mastermind Simple #" + moduleId + "] Submit: " + SlotColors[SlotNR [0]] + " " + SlotColors[SlotNR [1]] + " " + SlotColors[SlotNR [2]] + " " + SlotColors[SlotNR [3]] + " " + SlotColors[SlotNR [4]] + " - Code correct. Module solved");
-
 		} else {
 			PegBlack = 0;
 			Module.HandleStrike ();
-			Debug.Log ("[Mastermind Simple #" + moduleId + "] Submit: " + SlotColors[SlotNR [0]] + " " + SlotColors[SlotNR [1]] + " " + SlotColors[SlotNR [2]] + " " + SlotColors[SlotNR [3]] + " " + SlotColors[SlotNR [4]] + " - Code incorrect. Strike");
 		}
 					
 	}
 
 	void handleSlot(int num) {
+		Debug.Log ("[Mastermind Simple #" + moduleId + "] Slot " + (num) + " was pressed");
 
 		Audio.PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, Slot[num].transform);
 
@@ -185,9 +185,10 @@ public class Mastermind : MonoBehaviour {
 			
 			if (SlotNR [num] > 5)
 			SlotNR [num] = 0;
-					
+
+		Debug.Log ("[Mastermind Simple #" + moduleId + "] Slot " + (num) + " number is now " + SlotNR[num]);			
 		Slot[num].GetComponent<MeshRenderer>().material.color = SlotColor[SlotNR[num]];
-//		Debug.Log ("[Mastermind Simple #" + moduleId + "] Slot " + (num) + " color is now " + SlotColors[corrSlot[num]]);
+		Debug.Log ("[Mastermind Simple #" + moduleId + "] Slot " + (num) + " color is now " + SlotColor[SlotNR[num]]);
 
 	}
 }

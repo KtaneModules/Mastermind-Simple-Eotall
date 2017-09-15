@@ -11,17 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf2299c8864afe4ab42466f546ae20d, type: 3}
   m_Name: WorkshopItem
   m_EditorClassIdentifier: 
-  WorkshopPublishedFileID: 1102363790
-  Title: Mastermind Cruel
+  WorkshopPublishedFileID: 1102360624
+  Title: Mastermind Simple
   Description: 'The classic code-breaking game!
 
-    Now with a twist. Not for the faint-hearted!
 
-
-    moduleID: Mastermind Cruel
+    moduleID: Mastermind Simple
 
 
     Ideas by Eotall'
-  PreviewImage: {fileID: 2800000, guid: f7c2380430b574846bb3c558fb56ae8b, type: 3}
+  PreviewImage: {fileID: 2800000, guid: 972cf5d2a9497b34bb853bb23e55fe67, type: 3}
   Tags:
   - Regular Module
