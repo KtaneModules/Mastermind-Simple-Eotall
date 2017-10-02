@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Linq;
 using Newtonsoft.Json;
+using Random = UnityEngine.Random;
 
 public class Mastermind : MonoBehaviour {
 
@@ -190,4 +192,43 @@ public class Mastermind : MonoBehaviour {
 //		Debug.Log ("[Mastermind Simple #" + moduleId + "] Slot " + (num) + " color is now " + SlotColors[corrSlot[num]]);
 
 	}
+
+    private string TwitchHelpMessage = "Query the currently set colors with !{0} query. Query specific colors with !{0} query r b g y m. Submit the currently set colors with !{0} submit.  Submit specific colors with !{0} submit r b g y m. [Valid colors are R, G, B, M, Y, W]";
+    IEnumerator ProcessTwitchCommand(string inputCommand)
+    {
+        List<string> SlotColorsFull = new List<string>(SlotColors);
+        SlotColorsFull.AddRange(new [] {"WHITE","MAGENTA","YELLOW","GREEN","RED","BLUE"});
+
+        string[] split = inputCommand.ToUpperInvariant().Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
+        if ((split.Length != 1 && split.Length != 6) || (split[0] != "QUERY" && split[0] != "SUBMIT")) yield break;
+        yield return null;
+
+        if (split.Length == 6)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                int index = SlotColorsFull.IndexOf(split[i + 1]) % 6;
+                if (index < 0)
+                {
+                    yield return string.Format("sendtochaterror What the hell is color {0}? The only colors I recognize are: Red, Green, Blue, Yellow, Magenta, White", split[i + 1]);
+                    yield break;
+                }
+                while (SlotNR[i] != index)
+                {
+                    handleSlot(i);
+                    yield return new WaitForSeconds(0.1f);
+                }
+            }
+        }
+
+        if (split[0] == "QUERY")
+        {
+            handleQuery();
+        }
+        else
+        {
+            handleSubmit();
+        }
+        yield return new WaitForSeconds(0.1f);
+    }
 }
